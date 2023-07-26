@@ -1,0 +1,90 @@
+// Primary
+$kapow-blue: #1789fc;
+$links: #1375d8;
+$kapow-green: #328377;
+$kapow-orange: #f86624;
+$kapow-purple: #875bd9;
+$kapow-pink: #cc386b;
+
+// Secondary
+$body-text-dark: #494f57;
+$body-text-light: #f5faff;
+$text-light: #fafafa;
+$kapow-navy: #364659;
+$kapow-yellow: #ffeb3f;
+
+// Neutrals
+$dark-grey: #222;
+$navy-80: #5e6b7a;
+$navy-60: #86909b;
+$navy-40: #e2ecf2;
+$navy-20: #f0f6fa;
+$cream: #f7f6f4;
+$science-practices: #d5dfef;
+$core-ideas: #f4e3d4;
+$cross-cutting: #e4edd5;
+$blue-purple: #7C95CE;
+
+// System
+$error-100: #dc3545;
+$error-60: #ea858f;
+$error-20: #f8d6da;
+$warning-100: #ffc107;
+$warning-60: #ffda6a;
+$warning-20: #fff3cd;
+$success-100: #28a745;
+$success-60: #7eca8f;
+$success-20: #d4edda;
+$universal-black: #000;
+$universal-white: #fff;
+$selection-color: $universal-white;
+$selection-background: $kapow-blue;
+
+// Misc
+/* stylelint-disable-next-line color-function-notation */
+$box-shadow: -1px 10px 20px 0 rgba(9, 28, 64, 20%);
+
+// Colors
+$colors: (
+    // Primary
+    'kapow-blue': $kapow-blue,
+    'links': $links,
+    'kapow-green': $kapow-green,
+    'kapow-orange': $kapow-orange,
+    'kapow-purple': $kapow-purple,
+    'kapow-pink': $kapow-pink,
+
+    // Secondary
+    'body-text-dark': $body-text-dark,
+    'body-text-light': $body-text-light,
+    'text-light': $text-light,
+    'kapow-navy': $kapow-navy,
+    'kapow-yellow': $kapow-yellow,
+
+    // Neutrals
+    'dark-grey': $dark-grey,
+    'navy-80': $navy-80,
+    'navy-60': $navy-60,
+    'navy-40': $navy-40,
+    'navy-20': $navy-20,
+    'cream': $cream,
+    'science-practices': $science-practices,
+    'core-ideas': $core-ideas,
+    'cross-cutting': $cross-cutting,
+    'blue-purple': $blue-purple,
+
+    // System
+    'error-100': $error-100,
+    'error-60': $error-60,
+    'error-20': $error-20,
+    'warning-100': $warning-100,
+    'warning-60': $warning-60,
+    'warning-20': $warning-20,
+    'success-100': $success-100,
+    'success-60': $success-60,
+    'success-20': $success-20,
+    'universal-black': $universal-black,
+    'universal-white': $universal-white,
+    'selection-color': $selection-color,
+    'selection-background': $selection-background
+);

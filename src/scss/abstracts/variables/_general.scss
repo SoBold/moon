@@ -1,0 +1,28 @@
+////
+/// @access public
+/// @group abstracts
+////
+
+/// List of accepted values for lenghts
+/// @type map
+$unit-values: (
+    'px',
+    'em',
+    'rem',
+    'normal',
+    'inherit',
+    'initial',
+    'unset'
+);
+
+/// @type map
+$z-list: (
+    'modal': 400,
+    'button': 200
+);
+
+///
+$transition-time: .2s;
+
+///
+$transition-ease: ease-in-out;

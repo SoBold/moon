@@ -1,0 +1,26 @@
+// * Headings and body
+@each $heading in $headings {
+    #{$heading},
+    .#{$heading} {
+        @extend %#{$heading} !optional;
+    }
+}
+
+// * Custom headings
+@each $heading in $custom-headings {
+    .#{$heading} {
+        @extend %#{$heading} !optional;
+    }
+}
+
+.light {
+    @extend %light;
+}
+
+.regular {
+    @extend %regular;
+}
+
+.bold {
+    @extend %bold;
+}

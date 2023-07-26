@@ -1,0 +1,28 @@
+/* stylelint-disable property-no-vendor-prefix */
+$tick-color: var(--tick-color);
+
+.tick-list {
+    ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+            position: relative;
+            margin-left: 3rem;
+
+            &::after {
+                @include pseudo;
+
+                top: 0;
+                bottom: 0;
+                left: -3rem;
+                width: 2rem;
+                height: 2.8rem;
+                background-color: var(--tick-color);
+                -webkit-mask-image: url('../static/tick-green.svg');
+                -webkit-mask-position: center;
+                -webkit-mask-repeat: no-repeat;
+            }
+        }
+    }
+}

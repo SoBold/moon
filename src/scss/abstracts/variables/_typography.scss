@@ -1,0 +1,107 @@
+$lato: 'Lato', sans-serif;
+
+%light {
+    font-weight: 300;
+}
+
+%regular {
+    font-weight: 400;
+}
+
+%bold {
+    font-weight: 700;
+}
+
+%h1 {
+    @include typography(5rem, 6rem, $lato);
+
+    font-weight: 700;
+
+    @include respond('lg') {
+        @include typography(4rem, 4.8rem, $lato);
+    }
+}
+
+%h2 {
+    @include typography(3.7rem, 4.81rem, $lato);
+    
+    font-weight: 700;
+
+    @include respond('lg') {
+        @include typography(3rem, 3.6rem, $lato);
+    }
+}
+
+%h3 {
+    @include typography(3.2rem, 3.84rem, $lato);
+
+    font-weight: 700;
+
+    @include respond('lg') {
+        @include typography(2.8rem, 3.36rem, $lato);
+    }
+}
+
+%h4 {
+    @include typography(2.5rem, 3rem, $lato);
+
+    font-weight: 700;
+
+    @include respond('lg') {
+        @include typography(2.2rem, 2.64rem, $lato);
+    }
+}
+
+%h5 {
+    @include typography(2rem, 2.4rem, $lato);
+
+    font-weight: 700;
+
+    @include respond('lg') {
+        @include typography(1.8rem, 2.16rem, $lato);
+    }
+}
+
+%body {
+    @include typography(1.8rem, 2.7rem, $lato);
+
+    font-weight: 400;
+}
+
+%body-sm {
+    @include typography(1.6rem, 2.4rem, $lato);
+
+    font-weight: 400;
+}
+
+%nav {
+    @include typography(1.6rem, 2.4rem, $lato);
+
+    font-weight: 500;
+}
+
+%captions {
+    @include typography(1.4rem, 2.1rem, $lato);
+
+    font-weight: 400;
+}
+
+%menu-item {
+    @include typography(1.6rem, 2.4rem, $lato);
+
+    position: relative;
+    color: color('body-text-dark');
+
+    &:hover {
+        &::after {
+            @include pseudo;
+
+            width: 100%;
+            height: 4px;
+            background-color: color('kapow-blue');
+        }
+    }
+}
+
+$headings: ('h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'body');
+$custom-headings: ('body-sm', 'nav', 'menu-item', 'captions');

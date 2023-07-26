@@ -1,0 +1,16 @@
+@mixin first-margin-reset {
+    > *:first-child {
+        margin-top: 0;
+    }
+}
+
+@mixin last-margin-reset {
+    > *:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@mixin first-last-margin-reset {
+    @include first-margin-reset;
+    @include last-margin-reset;
+}

@@ -1,0 +1,14 @@
+@each $name, $color in $colors {
+    .#{$name} {
+        color: color($name);
+
+        &:visited,
+        &:active {
+            color: color($name);
+        }
+    }
+
+    .bg-#{$name} {
+        background-color: color($name);
+    }
+}

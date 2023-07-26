@@ -1,0 +1,30 @@
+.link {
+    display: inline-block;
+    background-color: transparent;
+    text-decoration: none;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    transition: transition(text-decoration-color);
+
+    @include interact {
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        text-decoration-thickness: 2px;
+        transition: transition(text-decoration-color);
+    }
+
+    &--reveal {
+        position: relative;
+
+        &:hover {
+            &::after {
+                @include pseudo;
+
+                width: 100%;
+                height: 4px;
+                background-color: color('kapow-blue');
+            }
+        }
+    }
+}

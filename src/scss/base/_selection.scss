@@ -1,0 +1,8 @@
+// * Base ::selection style
+@if variable-exists($name: 'selection-background') and variable-exists($name: 'selection-color') {
+    ::selection {
+        background-color: color('selection-background');
+        color: color('selection-color');
+        text-shadow: none;
+    }
+}

@@ -1,0 +1,38 @@
+/* stylelint-disable scss/at-import-partial-extension */
+@import '../../node_modules/@sobold/corestyles/scss/main.scss';
+
+// * Bootstrap
+@import '../../node_modules/bootstrap/scss/functions';
+
+// * Override
+@import 'override/variables';
+
+// * Bootstrap
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/variables-dark';
+@import '../../node_modules/bootstrap/scss/maps';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/root';
+@import '../../node_modules/bootstrap/scss/containers';
+@import '../../node_modules/bootstrap/scss/grid';
+@import '../../node_modules/bootstrap/scss/helpers';
+@import '../../node_modules/bootstrap/scss/utilities';
+
+// * Variables
+@import 'abstracts/**/*.scss';
+
+// * Base typography
+@import 'base/typography';
+
+// * Utilities override
+@import 'override/utilities';
+@import '../../node_modules/bootstrap/scss/utilities/api';
+
+// * Base
+@import 'base/colors';
+@import 'base/body';
+@import 'base/button-types';
+@import 'base/**/*.scss';
+
+// * Components
+@import '../components/**/*.scss';
