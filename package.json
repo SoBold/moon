@@ -11,7 +11,7 @@
   "type": "module",
   "scripts": {
     "prepare": "husky install",
-    "setup": "npm i && composer i && gulp",
+    "setup": "npm i && gulp",
     "dev": "gulp watch",
     "build": "gulp",
     "test": "gulp lint",
